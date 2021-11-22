@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Sprite.Editor", "U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Tilemap.Editor", "Unity.2D.Tilemap.Editor.csproj", "{e20514cf-7b0b-702d-3b03-a1b646723a0f}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{1bde169e-5762-7252-7d29-6126d78ab9fb}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,8 @@ Global
 		{4cb64a7c-20a2-4f64-c940-e89d0c8835f5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{e20514cf-7b0b-702d-3b03-a1b646723a0f}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{e20514cf-7b0b-702d-3b03-a1b646723a0f}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1bde169e-5762-7252-7d29-6126d78ab9fb}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1bde169e-5762-7252-7d29-6126d78ab9fb}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -39,6 +39,8 @@
      <Compile Include="Assets/Script/PlayerAttack.cs" />
      <Compile Include="Assets/Script/PlayerMovement.cs" />
      <Compile Include="Assets/Script/GateWayScript.cs" />
+     <Compile Include="Assets/Sprites/Simple 2D Platformer BE2/ReadMe/Scripts/ReadmeBE2.cs" />
+     <Compile Include="Assets/Script/EnemyMovement.cs" />
      <None Include="Assets/Sprites/Knight Files/Read Me.txt" />
     <Reference Include="UnityEngine">
         <HintPath>/home/irizqyakbr/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
