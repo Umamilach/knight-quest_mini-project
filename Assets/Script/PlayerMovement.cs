@@ -31,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void PlayerMove()
     {
+        // pergerakkan player di x-axis
         playerMoveX = Input.GetAxisRaw("Horizontal");
         body.velocity = new Vector2(playerMoveX * playerMoveSpeed, body.velocity.y);
         PlayerJump();
@@ -39,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void SetAnimation()
     {
+        // 
         if (playerMoveX > 0)
         {
             anim.SetBool("isWalk", true);
@@ -60,8 +62,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        print("hit");
-
+        // jika apakah player berada di tanah atau tidak
+        // jika tidak maka dia sedang loncat
         if (col.gameObject.tag == "Ground")
         {
             isGrounded = true;
@@ -70,19 +72,21 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        print("pitted");
 
-        if (col.tag == "Pit")
+        if (col.tag == "Pit" || col.tag == "Enemy")
         {
+            // player mati dan semua pergerakkan didisabled
             isDead = true;
             anim.SetBool("isDead", isDead);
+            GetComponent<PlayerMovement>().enabled = false;
 
-            // Player stay di tempat jika mati
+            // player stay di tempat jika mati
         }
     }
 
     private void PlayerJump()
     {
+        // player lompat dengan tekan tombol spasi dan berada pada tanah
         if (Input.GetKey(KeyCode.Space) && isGrounded)
         {
             body.velocity = new Vector2(body.velocity.x, jumpPower);
