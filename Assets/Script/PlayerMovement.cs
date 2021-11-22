@@ -78,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
             // player mati dan semua pergerakkan didisabled
             isDead = true;
             anim.SetBool("isDead", isDead);
-            GetComponent<PlayerMovement>().enabled = false;
+            this.enabled = false;
 
             // player stay di tempat jika mati
         }

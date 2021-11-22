@@ -16,10 +16,6 @@ public class EnemyMovement : MonoBehaviour
         rightEdge = transform.position.x + movementDistance;
 
     }
-    void Start()
-    {
-
-    }
 
     void Update()
     {
