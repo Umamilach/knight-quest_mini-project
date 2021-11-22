@@ -30,6 +30,8 @@ public class EnemyMovement : MonoBehaviour
     {
         if (movingLeft)
         {
+            transform.localScale = new Vector3(1f, 1f, 1f);
+
             if (transform.position.x > leftEdge)
             {
                 transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, transform.position.z);
@@ -42,6 +44,8 @@ public class EnemyMovement : MonoBehaviour
 
         else
         {
+            transform.localScale = new Vector3(-1f, 1f, 1f);
+
             if (transform.position.x < rightEdge)
             {
                 transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
